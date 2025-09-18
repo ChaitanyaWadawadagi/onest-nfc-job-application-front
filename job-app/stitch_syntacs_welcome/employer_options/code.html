@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<title>SyntACS - Employer Portal</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --brand-primary: #1173d4;
+        --brand-secondary: #e7edf3;
+        --text-primary: #0d141b;
+        --text-secondary: #f9fafb;
+        --surface-primary: #ffffff;
+        --surface-secondary: #f9fafb;
+      }
+      body {
+        font-family: 'Manrope', sans-serif;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[var(--surface-secondary)]">
+<div class="relative flex h-screen w-full flex-col justify-between overflow-x-hidden">
+<header class="flex items-center justify-between p-4">
+<div class="w-10"></div>
+<h1 class="text-xl font-bold text-center text-[var(--text-primary)]">
+          SyntACS
+        </h1>
+<button class="flex items-center justify-center h-10 w-10 rounded-full text-[var(--text-primary)]">
+<span class="material-symbols-outlined"> help </span>
+</button>
+</header>
+<main class="flex flex-1 flex-col items-center justify-center text-center px-6">
+<div class="mb-12">
+<span class="material-symbols-outlined text-7xl text-[var(--brand-primary)]">
+                business_center
+            </span>
+</div>
+<h2 class="text-3xl font-extrabold text-[var(--text-primary)] tracking-tight">
+          Employer Portal
+        </h2>
+<p class="mt-4 max-w-sm text-slate-600">
+          Access your dashboard to manage job postings and connect with talented professionals.
+        </p>
+</main>
+<footer class="p-6">
+<div class="flex flex-col gap-4">
+<a class="flex w-full items-center justify-center rounded-lg bg-[var(--brand-primary)] py-4 text-base font-bold text-[var(--text-secondary)] shadow-sm transition-transform hover:scale-105" href="#">
+            Register
+          </a>
+<a class="flex w-full items-center justify-center rounded-lg bg-[var(--surface-primary)] py-4 text-base font-bold text-[var(--text-primary)] shadow-sm transition-transform hover:scale-105" href="#">
+            Login
+          </a>
+</div>
+</footer>
+</div>
+
+</body></html>

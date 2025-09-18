@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #4A90E2;
+    }
+    .nfc-wave {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .nfc-wave::before, .nfc-wave::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      animation: wave 2s infinite;
+      border: 2px solid var(--primary-color);
+    }
+    .nfc-wave::before {
+      width: 100%;
+      height: 100%;
+    }
+    .nfc-wave::after {
+      width: 100%;
+      height: 100%;
+      animation-delay: 0.5s;
+    }
+    @keyframes wave {
+      0% {
+        transform: scale(0.5);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1.5);
+        opacity: 0;
+      }
+    }
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gray-50">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-gray-50 dark:bg-gray-900 group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+<div class="flex flex-col flex-grow">
+<header class="flex items-center bg-white dark:bg-gray-800 p-4 pb-2 justify-between sticky top-0 z-10 border-b border-gray-200 dark:border-gray-700">
+<button class="text-gray-800 dark:text-white flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h1 class="text-gray-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-10">NFC Scan</h1>
+</header>
+<main class="flex flex-col items-center justify-center flex-grow text-center px-4 py-8">
+<h2 class="text-gray-900 dark:text-white tracking-tight text-[28px] font-bold leading-tight">Scan your device</h2>
+<p class="text-gray-500 dark:text-gray-400 text-base font-normal leading-normal mt-2 mb-12">Hold your device near the NFC tag to scan.</p>
+<div class="nfc-wave mb-12">
+<div class="bg-gray-100 dark:bg-gray-800 rounded-full p-6">
+<div class="bg-[var(--primary-color)] rounded-full p-8 text-white">
+<span class="material-symbols-outlined text-6xl">nfc</span>
+</div>
+</div>
+</div>
+<div class="w-full max-w-sm">
+<div class="flex justify-between mb-1">
+<p class="text-gray-600 dark:text-gray-300 text-sm font-medium">Scanning...</p>
+<p class="text-gray-600 dark:text-gray-300 text-sm font-medium">20%</p>
+</div>
+<div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+<div class="bg-[var(--primary-color)] h-2.5 rounded-full" style="width: 20%"></div>
+</div>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+<nav class="flex justify-around items-center px-2 pt-2 pb-4">
+<a class="flex flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400 w-1/4" href="#">
+<span class="material-symbols-outlined text-2xl">work</span>
+<p class="text-xs font-medium tracking-[0.015em]">Job Listing</p>
+</a>
+<a class="flex flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400 w-1/4" href="#">
+<span class="material-symbols-outlined text-2xl">history</span>
+<p class="text-xs font-medium tracking-[0.015em]">History</p>
+</a>
+<a class="flex flex-col items-center justify-end gap-1 text-[var(--primary-color)] w-1/4" href="#">
+<div class="bg-[var(--primary-color)] rounded-full p-3 -mt-6 shadow-lg shadow-blue-500/30">
+<span class="material-symbols-outlined text-3xl text-white">nfc</span>
+</div>
+<p class="text-xs font-medium tracking-[0.015em] mt-1">NFC Scan</p>
+</a>
+<a class="flex flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400 w-1/4" href="#">
+<span class="material-symbols-outlined text-2xl">newspaper</span>
+<p class="text-xs font-medium tracking-[0.015em]">News</p>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>
